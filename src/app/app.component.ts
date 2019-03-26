@@ -3,7 +3,13 @@ import { ResolveEnd, ResolveStart, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  template: '<router-outlet></router-outlet><br>{{loading}}'
+  template: `
+  <router-outlet></router-outlet>
+  <div class="d-flex justify-content-center">
+    <div *ngIf="loading" class="spinner-grow text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>`
 })
 export class AppComponent implements OnInit {
   loading = false;

@@ -1,1 +1,4 @@
-<label>Description: </label>{{order.description}}
+<div [formGroup]="orderForm">
+  <label>Description: </label><input type="text" formControlName="description" />
+</div>
+

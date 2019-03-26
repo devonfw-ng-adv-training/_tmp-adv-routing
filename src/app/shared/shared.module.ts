@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AccessDeniedComponent } from './security/components/access-denied/access-denied.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [AccessDeniedComponent],
   imports: [
     CommonModule
   ],
